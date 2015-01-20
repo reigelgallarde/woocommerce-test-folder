@@ -43,7 +43,7 @@ function woorei_mysettings_add_section( $sections ) {
 /**
  * Add settings to the specific section we created before
  */
-
+ 
 add_filter( 'woocommerce_get_settings_products', 'woorei_mysettings', 10, 2 );
 function woorei_mysettings( $settings, $current_section ) {
 
