@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Dynamic Pricing Display
+ * Plugin Name: WooCommerce Dynamic Pricing Display
  * Plugin URI:  http://reigelgallarde.me/programming/show-product-price-times-selected-quantity-on-woocommecre-product-page/
  * Description: Show Product Price times Selected Quantity on WooCommerce Product Page. This is version 0.2 which integrates with
  *              [WooCommerce Dynamic Pricing & Discounts](http://codecanyon.net/item/woocommerce-dynamic-pricing-discounts/7119279).
