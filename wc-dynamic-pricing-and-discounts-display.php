@@ -58,7 +58,7 @@ function woocommerce_total_product_price() {
                     }
                     $('#product_total_price,#cart_total_price').toggle(!(this.value <= 1));
  
-                });
+                }).change();
             });
         </script>
     <?php
