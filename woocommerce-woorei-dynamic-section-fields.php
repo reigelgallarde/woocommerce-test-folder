@@ -52,20 +52,15 @@ function woorei_mysettings( $settings, $current_section ) {
 	 **/
 
 	if ( $current_section == 'mysettings' ) {
-		$settings_slider = array();
+		$settings = array();
 		// Add Title to the Settings
-		$settings_slider[] = array( 'name' => __( 'My Options', 'woorei' ), 'type' => 'title', 'desc' => __( 'The following options are used to configure my options.', 'woorei' ), 'id' => 'mysettings' );
-		$settings_slider[] = array( 'type' => 'woorei_dynamic_field_table', 'id' => 'woorei_dynamic_field_table' );
-		$settings_slider[] = array( 'type' => 'sectionend', 'id' => 'mysettings' );
-		return $settings_slider;
-	
-	/**
-	 * If not, return the standard settings
-	 **/
-
-	} else {
-		return $settings;
+		$settings[] = array( 'name' => __( 'My Options', 'woorei' ), 'type' => 'title', 'desc' => __( 'The following options are used to configure my options.', 'woorei' ), 'id' => 'mysettings' );
+		$settings[] = array( 'type' => 'woorei_dynamic_field_table', 'id' => 'woorei_dynamic_field_table' );
+		$settings[] = array( 'type' => 'sectionend', 'id' => 'mysettings' );
 	}
+	
+	return $settings;
+
 
 }
 
